@@ -1,0 +1,61 @@
+<!-- Created different cards for the different Penrod office locations with links going to the seperate pages -->
+<article class="slds-card slds-m-top_small">
+        <div class="slds-card__header slds-grid">
+        <header class="slds-media slds-media_center slds-has-flexi-truncate">
+        <div class="slds-media__body">
+        <h2 class="slds-card__header-title">
+        <a href="javascript:void(0);" class="slds-card__header-link slds-truncate" title="Milwaukee" routerLink="/milwaukee">
+        <span>Milwaukee</span>
+        </a>
+        </h2>
+        </div>
+        </header>
+        </div>
+        <div class="slds-card__body slds-card__body_inner">The weather for {{milwaukee.name}} is currently {{milwaukee.main.temp}}°F with {{milwaukee.weather[0].description}}</div>
+        <footer class="slds-card__footer"></footer>
+</article>
+<article class="slds-card">
+        <div class="slds-card__header slds-grid">
+        <header class="slds-media slds-media_center slds-has-flexi-truncate">
+        <div class="slds-media__body">
+        <h2 class="slds-card__header-title">
+        <a href="javascript:void(0);" class="slds-card__header-link slds-truncate" title="Minneapolis" routerLink="/minneapolis">
+        <span>Minneapolis</span>
+        </a>
+        </h2>
+        </div>
+        </header>
+        </div>
+        <div class="slds-card__body slds-card__body_inner">The weather for {{minneapolis.name}} is currently {{minneapolis.main.temp}}°F with {{minneapolis.weather[0].description}}</div>
+        <footer class="slds-card__footer"></footer>
+</article>
+<article class="slds-card">
+        <div class="slds-card__header slds-grid">
+        <header class="slds-media slds-media_center slds-has-flexi-truncate">
+        <div class="slds-media__body">
+        <h2 class="slds-card__header-title">
+        <a href="javascript:void(0);" class="slds-card__header-link slds-truncate" title="Chicago" routerLink="/chicago">
+        <span>Chicago</span>
+        </a>
+        </h2>
+        </div>
+        </header>
+        </div>
+        <div class="slds-card__body slds-card__body_inner">The weather for {{chicago.name}} is currently {{chicago.main.temp}}°F with {{chicago.weather[0].description}}</div>
+        <footer class="slds-card__footer"></footer>
+</article>
+<article class="slds-card">
+        <div class="slds-card__header slds-grid">
+        <header class="slds-media slds-media_center slds-has-flexi-truncate">
+        <div class="slds-media__body">
+        <h2 class="slds-card__header-title">
+        <a href="javascript:void(0);" class="slds-card__header-link slds-truncate" title="Dallas" routerLink="/dallas">
+        <span>Dallas</span>
+        </a>
+        </h2>
+        </div>
+        </header>
+        </div>
+        <div class="slds-card__body slds-card__body_inner">The weather for {{dallas.name}} is currently {{dallas.main.temp}}°F with {{dallas.weather[0].description}}</div>
+        <footer class="slds-card__footer"></footer>
+</article>

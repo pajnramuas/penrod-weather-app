@@ -1,0 +1,30 @@
+<div>
+        <div class="slds-card slds-m-top_small">
+            <div class="slds-p-around_medium">
+                <div class="slds-text-heading_large">{{weather.name}}</div>
+                <br>
+                <!-- Map of Milwaukee Office with weather details -->
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col slds-size_1-of-4">
+                        <div class="map" style="width:29rem">
+                            <div class="slds-map_container">
+                                <div class="slds-map">
+                                    <iframe id="GoogleMapID" title="Google Maps iframe" src="https://www.google.com/maps/embed/v1/place?q=219+N+Milwaukee+St+2nd+Floor,+Milwaukee,+WI+53202&amp;key=AIzaSyDliLquGXGts9S8YtkWVolSQEJdBL1ZuWc"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-col slds-size_1-of-4">
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-4">
+                                <div class="slds-text-heading_large">{{weather.main.temp}}°F</div>
+                                <div class="slds-text-body_small slds-text-align_right slds-border_bottom"> with {{weather.weather[0].description}}</div>
+                            </div>
+                        </div>
+                        <div class="slds-text-body_small">Wind: {{weather.wind.speed}} m/h</div>
+                        <div class="slds-text-body_small">Humidity: {{weather.main.humidity}}%</div>
+                        <div class="slds-text-body_small">Pressure: {{weather.main.pressure}} hPa</div>
+                    </div>
+                </div>               
+        </div>  
+</div>

@@ -1,0 +1,59 @@
+<html>
+  <body>
+      <div class="slds-context-bar">
+          <div class="slds-context-bar__primary">
+            <div class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger_click slds-no-hover">
+              <!-- Home Button -->
+              <div class="slds-context-bar__icon-action" routerLink="/">
+                <button class="slds-button slds-icon-waffle_container slds-context-bar__button">
+                  <span class="slds-icon-waffle">
+                    <span class="slds-r1"></span>
+                    <span class="slds-r2"></span>
+                    <span class="slds-r3"></span>
+                    <span class="slds-r4"></span>
+                    <span class="slds-r5"></span>
+                    <span class="slds-r6"></span>
+                    <span class="slds-r7"></span>
+                    <span class="slds-r8"></span>
+                    <span class="slds-r9"></span>
+                  </span>
+                </button>
+              </div>
+              <!-- App Title -->
+              <span class="slds-context-bar__label-action slds-context-bar__app-name">
+                <span class="slds-truncate" title="Weather App">Weather App</span>
+              </span>
+            </div>
+          </div>
+          <!-- Navigation Bar for Cities -->
+          <nav class="slds-context-bar__secondary" role="navigation">
+            <ul class="slds-grid">
+              <li class="slds-context-bar__item">
+                <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Milwaukee" routerLink="/milwaukee">
+                  <span class="slds-truncate" title="Milwaukee">Milwaukee</span>
+                </a>
+              </li>
+              <li class="slds-context-bar__item">
+                <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Minneapolis" routerLink="/minneapolis">
+                  <span class="slds-truncate" title="Minneapolis">Minneapolis</span>
+                </a>
+              </li>
+              <li class="slds-context-bar__item">
+                <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Chicago" routerLink="/chicago">
+                  <span class="slds-truncate" title="Chicago">Chicago</span>
+                </a>
+              </li>
+              <li class="slds-context-bar__item">
+                <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Dallas" routerLink="/dallas">
+                  <span class="slds-truncate" title="Dallas">Dallas</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+      </div>
+  </body>
+</html>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
