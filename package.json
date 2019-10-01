@@ -2,6 +2,7 @@
   "name": "penrod-weather-app",
   "version": "0.0.0",
   "scripts": {
+    "show-shell": "env echo $SHELL",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
